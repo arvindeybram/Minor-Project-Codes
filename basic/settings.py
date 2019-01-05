@@ -1,0 +1,10 @@
+BOT_NAME = 'basic'
+SPIDER_MODULES = ['basic.spiders']
+NEWSPIDER_MODULE = 'basic.spiders'
+ROBOTSTXT_OBEY = False
+DEPTH_LIMIT=3
+DOWNLOAD_FAIL_ON_DATALOSS=False
+CONCURRENT_REQUESTS=200 # a high number, just so it won't conflict with per-domain concurrency
+CONCURRENT_REQUESTS_PER_DOMAIN=1 # this is saying do 1 request at a time per domain (and I will specify credentials as domains).
+#RANDOMIZE_DOWNLOAD_DELAY=False # just to deactivate random offset that scrapy adds.
+#DONWLOAD_DELAY=1.0 # The delay you want per credential, this says every 1 second, you can also specify decimals
